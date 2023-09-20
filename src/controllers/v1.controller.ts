@@ -17,7 +17,7 @@ export const Products = async (
     return res.status(200).json(
       messageResponse(200, {
         product: products,
-      }))
+      })) 
   } catch (error) {
     next(error);
     res.status(500).send("Internal Server Error");
