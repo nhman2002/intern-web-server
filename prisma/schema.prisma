@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+model ABC {
+  id          Int     @id(map: "Test_pkey") @default(autoincrement())
+  image       String? @unique(map: "UQ__ABC__FB243A69B92FD132") @db.Char(1000)
+  name        String? @unique(map: "UQ__ABC__72E12F1BFAE7B461") @db.Char(60)
+  description String? @unique(map: "UQ__ABC__489B0D97E332B780")
+  price       Float
+  color       String  @db.Char(7)
+}
