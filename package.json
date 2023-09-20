@@ -1,7 +1,7 @@
 {
-  "name": "dental-clinic-server",
+  "name": "intern-web-server",
   "version": "0.0.1",
-  "description": "The server for the Dental Clinic App",
+  "description": "The server for the intern",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
