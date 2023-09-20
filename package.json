@@ -2,11 +2,11 @@
   "name": "intern-web-server",
   "version": "0.0.1",
   "description": "The server for the intern",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
     "build": "npx tsc"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.1",
+    "node": "^20.6.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0"
   },
